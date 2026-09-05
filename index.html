@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>App Ads</title>
+  </head>
+  <body>
+      <pre id="ads-content"></pre>
+      <script>
+          fetch('ads.txt')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('ads-content').textContent = data;
+});
+    </script>
+      </body>
+      </html>
